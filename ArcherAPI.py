@@ -18,5 +18,5 @@ class ArcherInstance:
                                                                 "Username": self.username, "UserDomain": "",
                                                                 "Password": self.password}, verify=False)
         data = json.loads(response.content.decode("utf-8"))
-        print(data)
+        print(data["RequestedObject"]["SessionToken"])
         self.session_token = data["RequestedObject"]["SessionToken"]
