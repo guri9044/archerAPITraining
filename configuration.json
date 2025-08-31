@@ -1,0 +1,13 @@
+{
+    'archerURL': 'https://your-archer-instance.com/',
+    'username': 'your_username',
+    'password': 'your_password',
+    'clientID': 'your_client_id',
+    'clientSecret': 'your_client_secret',
+    'verifySSL': False
+    'fieldMap':[
+        'id':345
+        'Name':Finding_Name
+        'ServiceNow':'short_description'
+        ]
+}
