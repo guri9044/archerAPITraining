@@ -1,12 +1,19 @@
 import json
 import requests
+from cryptography.fernet import Fernet
+
+#key = 'yLcmh4BfdJIEJUqwjd_U13F8pWEgviR_PpHE3edePUQ='.encode()
+def decrypt(encrypted_password: bytes, key: bytes) -> str:
+    fernet = Fernet(key)
+    decrypted = fernet.decrypt(encrypted_password).decode()
+    return decrypted
 
 class ArcherInstance:
     #default initialization method to set up instance variables and creating self object
     def __init__(self, inst_url, instance_name, username, password):
         self.api_url_base = f"https://{inst_url}/"
-        self.username = username
-        self.password = password
+        self.username = decrypt(username.encode(), 'yLcmh4BfdJIEJUqwjd_U13F8pWEgviR_PpHE3edePUQ='.encode())
+        self.password = decrypt(password.encode(), 'yLcmh4BfdJIEJUqwjd_U13F8pWEgviR_PpHE3edePUQ='.encode())
         self.instance_name = instance_name
         #self.session_token to store session token after login and be used in all other methods
         self.session_token = ""

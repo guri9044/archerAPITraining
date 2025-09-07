@@ -1,13 +1,13 @@
 {
-    'archerURL': 'https://your-archer-instance.com/',
-    'username': 'your_username',
-    'password': 'your_password',
-    'clientID': 'your_client_id',
-    'clientSecret': 'your_client_secret',
-    'verifySSL': False
-    'fieldMap':[
-        'id':345
-        'Name':Finding_Name
-        'ServiceNow':'short_description'
-        ]
+    "Archer": {
+        "url": "archer-irm.com/Archer",
+        "username": "gAAAAABotWxcrqgD3ke_rg5E-6Y6eZeGqKrG-vqkssVP9NxUkJQIwmQRwQdDhVCk-bxCAH3-z6RlOgjJZ393L304-_R2XwfzAA==",
+        "password": "gAAAAABotWkHgihVT0F8KrHiPAfRyteZCuBwE5ZKx1pu_gWbZ087xC___giqro0x_FavPiIW-pApU4Xk9icN3qfpqDAp3KAnjQ==",
+        "instance": "training2025"
+    },
+    "ServiceNow": {
+        "url": "devdev340589.service-now.com",
+        "username": "admin",
+        "password": "O59VDaxl*=pH"
+    }
 }

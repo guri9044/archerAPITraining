@@ -1,10 +1,14 @@
 from ArcherAPI import ArcherInstance
 import os
+import json
 
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
-archer = ArcherInstance("archer-irm.com/Archer", "training2025", "api.user", "Archer@123")
+with open('configuration.json', 'r', encoding='utf-8') as f:
+    config = json.load(f)
+
+archer = ArcherInstance(str(config['Archer']['url']), str(config['Archer']['instance']), str(config['Archer']['username']),str(config['Archer']['password']))
 #userId = archer.createUser( {"User":{"FirstName":"FirstName","LastName":"LastName",},"Password":"Archer@123"})
 #archer.assignRoleToUser({"UserId":userId,"RoleId":3,"IsAdd":'true'})
 
