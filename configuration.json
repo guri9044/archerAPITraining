@@ -9,5 +9,28 @@
         "url": "devdev340589.service-now.com",
         "username": "admin",
         "password": "O59VDaxl*=pH"
-    }
+    },
+    "mapping": {
+        "ArcherAppName": "Findings",
+        "ArcherDeltaReportId": 10411,
+        "ServiceNowTable": "sn_grc_issue",
+        "fields": [
+            {
+                "ArcherField": "17269",
+                "ServiceNowField": "u_archer_finding_id"
+            },
+            {
+                "ArcherField": "2670",
+                "ServiceNowField": "short_description"
+            },
+            {
+                "ArcherField": "2265",
+                "ServiceNowField": "description"
+            },
+            {
+                "ArcherField": "25264",
+                "ServiceNowField": "sys_id"
+            }
+        ]
+    }   
 }
